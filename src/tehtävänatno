@@ -1,0 +1,50 @@
+Yrityksesi on saanut tehtäväkseen toteuttaa nettisivut Slow Run ry:lle. Rekisteröity yhdistys on tehnyt seuraavanlaisen toimeksiannon:
+
+Teette ohjelmointitiimissä 2 henkilöä (max 3) koodatun nettisivun (julkaisujärjestelmällä tehty sivu ei kelpaa).
+
+SISÄLTÄÄ:
+- Etusivun, josta mobiili ja pöytäkone versio
+
+     * leiska tehtynä graafikon puolesta (pieniä poikkeuksia sallitaan)
+
+- Uutissivun, jonka uutiset muodostuvat sivulle tietokannan sisällöstä (esimerkiksi php taulukosta)
+
+     * 4 uutista vähintään
+
+     * uutinen sisältää: otsikkokuvan, otsikon, päivämäärän ja tekstin
+
+- Yhteydenottosivu, jonka kontaktilomakeen tiedot tallentuu tietokantaan
+
+     * sivulla oltava kontaktilomake, kuten etusivulla (nimi, sähköposti, paikkakunta ja viesti)
+
+- Toimiva valikko, jolla navikoidaan
+
+Sivuston fontit: 
+
+- Libre Bodoni
+- Inter (google fonts)
+
+Värit:
+
+#05556F, #003856, #849E8A, #84869B, #D7CFA1, #96906D
+
+Materiaalit:
+
+Leiskat liitteenä.
+
+Kuva liitteenä ja etsi korvaavat ikonit ja kartta (etsi kopiovapaat)
+
+Tekstit liitteenä ja keksityt: www.loremipsum.io
+
+Uutisten tekstit www.loremipsum.io ja uutisten kuvat pexels.com
+
+Tekniikka:
+- Jos ei ole saatavissa tietokantaa, lokaalisti sivu pystyyn xamppilla
+
+- saat itse määritellä tekniikan, millä toteutat sivuston ja tietokantayhteyden
+
+TEHTÄVÄT PALAUTUS:
+
+1. Word, jossa kuvankaappauksia kaikilta 3 sivulta, tietokantapuolelta uutisista ja tallentuneesta yhteydenotosta.
+
+2. koko sivusto zippinä

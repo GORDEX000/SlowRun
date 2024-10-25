@@ -1,0 +1,32 @@
+
+
+
+navbar:
+
+<nav className="z-50">
+            <div className="h-10vh flex justify-between lg:py-5 px-20 py-20 border-b">
+                <div className="flex items-center flex-1">
+                    <h2 className="text-3xl font-bold text-pink-500">SLOW RUN</h2> {/* Fixed text size */}
+                </div>
+                <div>
+                    <ul className="flex gap-8 mr-16 text-[18px]"> {/* Fixed 'gab' to 'gap' */}
+                        <Link to=''>
+                            <li className='hover:text-pink-400 transition border-b-2 border-white hover:border-pink-400 cursor-pointer'>UUTISET</li>
+                        </Link>
+                        {/* mega menu start */}
+                        <div className="group">
+                            <button className="text-pink-400">UUTISET</button>
+                            <div className="hidden group-hover:flex flex-col absolute left-0 top-16 p-10 w-full bg-white z-20 text-back duration-300">
+                                <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
+                                    <h3 className="mb-4 text-2x1 text-pink-400"></h3>
+                                </div>
+                            </div>
+                        </div>
+                        {/* mega menu end */}
+                        <Link to=''>
+                            <li className='hover:text-pink-400 transition border-b-2 border-white hover:border-pink-400 cursor-pointer'>YHTEYS</li>
+                        </Link> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
