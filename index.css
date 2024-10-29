@@ -1,99 +1,146 @@
 body {
-    margin: 0;
-  }
-  
-  .topnav {
-    display: flex;
-    justify-content: space-between; /* This centers items and moves .active to the left */
-    overflow: hidden;
-    background-color: #05556F;
-    align-items: center; /* This vertically centers items */
-  }
-  
-  .topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 15px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Libre Bodoni", "Inter", sans-serif, serif;
-  }
-  
-  .topnav a.active {
-    font-size: 40px;
-  }
-  
-  .topnav a.split {
-    font-family: "Inter", sans-serif;
-  }
-  
-  .topnav a.split:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-  }
-  
-  /* Adjustments for the right-aligned (split) links inside the navigation bar */
-  .topnav-right {
-    display: flex;
-    gap: 10px; /* Adjust the space between the links if needed */
-    font-family: "Inter", sans-serif;
-  }
-  
-  .container {  
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .slides {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    color: #05556F;
-  }
-  
-  .slides1 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    color: rgb(255, 255, 255);
-    background: url(images/image1.jpg) no-repeat;
-    background-size: auto;
-  }
-  
-  .slides h1 {
-    font-size: 70px;
-    font-weight: 600;
-    max-width: 650px;
-  }
-  
-  .box {
-    position: absolute;
-    left: 300px; /* Added unit to the value */
-    width: 350px;
-    height: 50px;
-    
-  }
-  
-  .button {
-    background-color: #849E8A;
-    border: none;
-    color: white;
-    padding: 15px;
-    width: 170px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 2px 2px;
-    cursor: pointer;
-  }
-  
-  .button1 {
-    border-radius: 8px;
-  }
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between; /* This centers items and moves .active to the left */
+  overflow: hidden;
+  background-color: #05556F;
+  align-items: center; /* This vertically centers items */
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Libre Bodoni", "Inter", sans-serif, serif;
+}
+
+.topnav a.active {
+  font-size: 40px;
+}
+
+.topnav a.split {
+  font-family: "Inter", sans-serif;
+}
+
+.topnav a.split:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* Adjustments for the right-aligned (split) links inside the navigation bar */
+.topnav-right {
+  display: flex;
+  gap: 10px; /* Adjust the space between the links if needed */
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* This ensures the items are stacked vertically */
+  align-items: center; /* This centers items horizontally */
+  justify-content: flex-start; /* Aligns items to the top of the slide */
+  padding-top: 20px; /* Adds some space at the top */
+  gap: 20px; /* Adjusts the space between .slide2otsikko and .slide2teksti */
+}
+
+.slide2-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  padding-top: 20px; /* Adjusts the space from the top of the slide */
+  gap: 20px; /* Adjusts the space between .slide2otsikko and .slide2teksti */
+}
+
+.slide2otsikko {
+  color: #05556F;
+  font-size: 70px;
+  font-weight: 600;
+  max-width: 650px;
+  text-align: center; /* Centers text inside the heading */
+}
+
+.slide2teksti {
+  line-height: 31px;
+  color: #05556F;
+  text-align: center; /* Centers text inside the paragraph */
+  max-width: 650px; /* Ensures that the text doesn't stretch too wide */
+}
+
+.slide1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: rgb(255, 255, 255);
+  background: url(images/image1.jpg) no-repeat;
+  background-size: auto;
+}
+
+.slide h1 {
+  font-size: 40px;
+  font-weight: 600;
+  max-width: 650px;
+}
+
+.slide h3 {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 650px;
+}
+
+.box {
+  position: absolute;
+  left: 300px;
+  width: 360px;
+  height: 50px;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #849E8A;
+  border: none;
+  color: white;
+  padding: 15px;
+  width: 170px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.h3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: #05556F;
+  margin-top: 1000px;
+}
