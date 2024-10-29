@@ -64,11 +64,22 @@ body {
   gap: 20px; /* Adjusts the space between .slide2otsikko and .slide2teksti */
 }
 
+.slide3-container {
+  width: 100%;
+  display: flex;
+  flex-direction: left; /* Stacks items vertically */
+  align-items: flex-start; /* Centers items horizontally */
+  padding-left: 170px; /* Adjusts the space from the top of the slide */
+  gap: 20px; /* Adjusts the space between .slide2otsikko and .slide2teksti */
+  height: 350px;
+  background-color: #849E8A;
+}
+
 .slide2otsikko {
   color: #05556F;
   font-size: 70px;
-  font-weight: 600;
-  max-width: 650px;
+  font-weight: 400;
+  max-width: 400px;
   text-align: center; /* Centers text inside the heading */
 }
 
@@ -92,15 +103,32 @@ body {
 }
 
 .slide h1 {
-  font-size: 40px;
-  font-weight: 600;
-  max-width: 650px;
+  font-size: 30px;
+  font-weight: 300;
+  max-widrgb(255, 255, 255)px;
+  color: #05556F;
 }
 
 .slide h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   max-width: 650px;
+  color: #05556F;
+}
+
+.slide h4 {
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 650px;
+  color: #ffffff;
+  font-family: "Libre Bodoni"
+}
+
+.slide h5 {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Libre Bodoni";
+  width: 1300px;
 }
 
 .box {
@@ -111,9 +139,11 @@ body {
 }
 
 .box2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  word-spacing: 10px;
+  max-width: 5000px; /* Limit the width of text lines */
+  box-sizing: border-box; /* Include padding in width calculation */
+  padding: 10px; /* Optional padding for spacing */
+  margin: 0 auto; /* Center the box horizontally */
 }
 
 .button {
@@ -144,3 +174,37 @@ body {
   color: #05556F;
   margin-top: 1000px;
 }
+
+
+.image-container img {
+  display: inline-block;
+  margin: 0 85px; /* Säädä kuvan väliä tällä arvolla */
+  width: 140px; /* Säädä tarvittaessa */
+  height: auto;
+}
+
+.image-container {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Space between each image-heading pair */
+}
+
+.image-wrapper {
+  text-align: center; /* Center text under the image */
+  font-size: 20px;
+  
+}
+
+.image-wrapper img {
+  width: 150px; /* Set the image width as needed */
+  height: center; /* Maintain aspect ratio */
+}
+
+.slide2otsikko1,
+.slide2otsikko2,
+.slide2otsikko3 {
+  margin: 0; /* Remove default margin */
+}
+
+
+
