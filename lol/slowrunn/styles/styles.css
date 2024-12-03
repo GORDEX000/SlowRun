@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure consistent box sizing */
+    font-family: 'Libre Bodoni', sans-serif;
+}
+
+/* Navigation Bar */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #D7CFA1;
+}
+
+.navbar-brand {
+    color: #FFFFFF !important; /* Set text color to white siinä "slowrun" tekstissä*/
+}
+
+
+.topnav a:hover {
+    background-color: #849E8A;
+    color: #003856;
+}
+
+.topnav a.active {
+    background-color: #05556F;
+    color: #D7CFA1;
+}
+
+.navbar-brand img {
+    height: 100px;
+    padding-left: 0;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+    font-size: 20px;
+    background-color: #05556F;
+    color: #FFFFFF !important; /* Set text color to white */
+}
+
+#nav-bar ul li a:hover {
+    color: #96906D !important;
+}
+
+.navbar {
+    background-color: #05556F;
+    margin-bottom: 0px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-link {
+    color: #D7CFA1 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Slider */
+#Slider {
+    width: auto;
+    height: 240px;
+}
+
+::placeholder {
+    color: #003856 !important;
+}
+
+#site-info {
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    background: #05556F;
+    position: absolute;
+    color: #D7CFA1;
+    left: 0;
+    bottom: 0;
+    line-height: 1.9em;
+}
+
+#what-about {
+    background-color: #ffffff; /* Soft beige background */
+    color: #05556F;
+    padding: 50px 20px;
+}
+
+
+
+
+#who-are-we {
+    color: #05556F;
+    font-weight: 400;
+    background-color: #849E8A; /* Background color */
+    padding: 50px 0; /* Top and bottom padding for section */
+}
+
+#who-are-we .container {
+    max-width: 800px; /* Set max-width to control the width */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Padding inside the container for spacing */
+}
+
+#who-are-we h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #05556F; /* Text color for heading */
+    margin-bottom: 20px;
+    text-align: left; /* Align heading to the left */
+}
+
+#who-are-we p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #05556F; /* Text color for paragraph */
+    text-align: left; /* Align paragraph text to the left */
+    margin: 0;
+}
+
+
+
+/* Button positioning */
+.image-container {
+    position: relative;
+    text-align: center; /* Center align text */
+}
+
+.image-container img {
+    width: 100%; /* Make the image span the width of its container */
+    height: auto; /* Keep the aspect ratio intact */
+    object-fit: cover; /* Make sure the image covers its container without stretching */
+}
+
+
+.button-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+}
+
+.button-text {
+    color: #fff; /* Text color above button */
+    font-size: 1.5rem; /* Font size */
+    margin-bottom: 30px; /* Space between text and button */
+}
+
+.join-button {
+    background-color: #849E8A; /* Light green background */
+    color: #FFFFFF; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+.join-button:hover {
+    background-color: #7cd57c; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust navbar styles for mobile */
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 0; /* Add padding for better spacing */
+    }
+
+    .navbar-nav li {
+        padding: 5px 0; /* Reduce padding for smaller screens */
+    }
+
+    .navbar-nav li a {
+        text-align: center; /* Center align links on smaller screens */
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    /* Slider image adjustments */
+    #Slider img {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Contact form adjustments */
+    .contact-form {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+
+    /* General adjustments */
+    h1, h2 {
+        text-align: center; /* Center align headings */
+        font-size: 24px; /* Adjust font size */
+    }
+
+    /* Additional adjustments */
+    #contact {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .follow {
+        font-size: 16px; /* Adjust font size for contact info */
+    }
+}
+
+
+
+.icon-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space icons evenly */
+    align-items: center; /* Center items vertically */
+    margin-top: 40px; /* Space above the icons */
+    padding: 0 50px; /* Add horizontal padding to create more space between left and right items */
+}
+
+/* Added media query for mobile view */
+@media (max-width: 768px) {
+    .icon-container {
+        flex-direction: column; /* Change to vertical alignment on mobile */
+        align-items: center; /* Center items horizontally */
+    }
+}
+
+.icon-item {
+    text-align: center; /* Center align text under icons */
+    max-width: 150px; /* Set a max-width for icons */
+}
+
+.icon-item i {
+    color: #05556F; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.icon-item p {
+    color: #555; /* Text color for descriptions */
+    font-size: 1rem; /* Font size for description text */
+}
+.lastpageimage {
+    display: flex;
+    justify-items: center;
+}
+
+
+
+.last-image {
+    display: flex;
+    justify-items: center;
+    width: 300px;  /* Adjust width as needed */
+    height: auto;  /* Keeps aspect ratio */
+    max-width: 100%;  /* Ensures it stays responsive */  
+}
+
+
+/* Contact Section */
+#contact {
+	background: #D7CFA1;
+	padding-top: 330px;
+	padding-bottom: 100px;
+	color: #05556F;
+}
+
+.contact-form {
+	padding: 15px;
+}
+
+
+/* CSS for the images */
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+

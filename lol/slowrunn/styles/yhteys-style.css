@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Added to ensure consistent box sizing */
+	font-family: 'Inter', sans-serif;
+}
+
+/* Navigation Bar */
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.topnav {
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #05556F;
+	text-align: center;
+	padding: 26px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	background-color: #D7CFA1;
+}
+
+.topnav a:hover {
+	background-color: #849E8A;
+	color: #003856;
+}
+
+.topnav a.active {
+	background-color: #05556F;
+	color: #D7CFA1;
+}
+
+.navbar-brand img {
+	height: 100px;
+	padding-left: 0;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+.navbar-nav li a {
+	float: right;
+	text-align: left;
+	font-size: 20px;
+	background-color: #05556F;
+	color: #D7CFA1;
+}
+
+#nav-bar ul li a:hover {
+	color: #96906D !important;
+}
+
+.navbar {
+	background-color: #05556F;
+	margin-bottom: 0px;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-link {
+	color: #D7CFA1 !important;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* Slider */
+#Slider {
+	width: auto;
+	height: 240px;
+}
+
+/* Contact Section */
+#contact {
+	background: #D7CFA1;
+	padding-top: 330px;
+	padding-bottom: 100px;
+	color: #05556F;
+}
+
+.contact-form {
+	padding: 15px;
+}
+
+::placeholder {
+	color: #003856 !important;
+}
+
+#site-info {
+	width: 100%;
+	line-height: 3;
+	text-align: center;
+	background: #05556F;
+	position: absolute;
+	color: #D7CFA1;
+	left: 0;
+	bottom: 0;
+	line-height: 1.9em;
+}
+
+
+/* Section: Keitä Olemme & Miksi Mukaan */
+#who-we-are, #why-join {
+    background-color: #D7CFA1; /* Soft beige background */
+    color: #05556F;
+    padding: 50px 20px;
+}
+
+#who-we-are p, #why-join p {
+    color: #05556F;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#what-about, #why-join {
+    background-color: #D7CFA1; /* Soft beige background */
+    color: #05556F;
+    padding: 50px 20px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	/* Adjust navbar styles for mobile */
+	.navbar-nav {
+		flex-direction: column; /* Stack items vertically */
+		padding: 10px 0; /* Add padding for better spacing */
+	}
+
+	.navbar-nav li {
+		padding: 5px 0; /* Reduce padding for smaller screens */
+	}
+
+	.navbar-nav li a {
+		text-align: center; /* Center align links on smaller screens */
+		font-size: 18px; /* Adjust font size for mobile */
+	}
+
+	/* Slider image adjustments */
+	#Slider img {
+		width: 100%; /* Full width on mobile */
+		height: auto; /* Maintain aspect ratio */
+	}
+
+	/* Contact form adjustments */
+	.contact-form {
+		padding: 10px; /* Reduced padding for mobile */
+	}
+
+	/* General adjustments */
+	h1, h2 {
+		text-align: center; /* Center align headings */
+		font-size: 24px; /* Adjust font size */
+	}
+
+	/* Additional adjustments */
+	#contact {
+		padding: 20px; /* Adjust padding */
+	}
+
+	.follow {
+		font-size: 16px; /* Adjust font size for contact info */
+	}
+} 
